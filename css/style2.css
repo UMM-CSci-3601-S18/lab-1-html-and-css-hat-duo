@@ -8,14 +8,15 @@ use float to make something locate itself on the right or left
 
 body{
   padding: 30px;
-  background-color: #7A0019;
 }
 
 #main-title{
   color: #FFDE7A;
   font-family: monospace;
   text-align: center;
-  font-size: 4rem
+  font-size: 4rem;
+  background-color: #ffffff;
+
 }
 
 h2 {
@@ -31,19 +32,23 @@ h2 {
   max-width: 870px;
 }
 
+/*
+Used grouping to make the font-family of each section the same.
+ */
+#pslo, #courses, #faculty, #validation{
+  font-family: Arial;
+}
+
 #courses {
   background-color: #FFDE7A;
-  font-family: Arial
 }
 
 #pslo {
   background-color: #d5d6d2;
-  font-family: Arial
 }
 
 #faculty {
   background-color: #f9f7f6;
-  font-family: Arial
 }
 
 #faculty>ul>li {
@@ -65,24 +70,25 @@ img.pic {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #FFDE7A; /* changed color*/
 }
 
 #style li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: left; /*changed it to top*/
 }
 
 #style li a {
   display: block;
-  color: white;
+  color: black; /* Changed Style # text color from white to blac */
+  font-size: 95%;
   text-align: center;
-  padding: 14px 16px; /*this adds some spacing around the items in our style footer*/
+  padding: 12px 16px; /*this adds some spacing around the items in our style footer*/
   text-decoration: none;
 }
 
 /* Change the link color to #000 (black) on hover */
 #style li a:hover {
-  background-color: #000;
+  background-color: #ffffff; /* changed hover-over color from black to white for better clarity */
 }
 
 #style {
@@ -100,5 +106,4 @@ img.pic {
   background-color: #d5d6d2;
   margin: auto;
   text-align: center;
-  font-family: Arial
 }
