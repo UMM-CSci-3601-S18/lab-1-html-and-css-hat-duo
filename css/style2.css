@@ -33,6 +33,7 @@ h2 {
 
 #courses {
   background-color: #FFDE7A;
+  font-family: Arial
 }
 
 #pslo {
@@ -41,12 +42,12 @@ h2 {
 }
 
 #faculty {
-  background-color: #f9f7f6
+  background-color: #f9f7f6;
+  font-family: Arial
 }
 
 #faculty>ul>li {
   display: inline-block;
-  font-family: sans-serif;
   padding: 30px;
 }
 
@@ -98,5 +99,6 @@ img.pic {
   font-size: 80%;
   background-color: #d5d6d2;
   margin: auto;
-  text-align: center
+  text-align: center;
+  font-family: Arial
 }
