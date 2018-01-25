@@ -7,7 +7,34 @@ use float to make something locate itself on the right or left
 
 */
 
+/* Used display ad flex-flow in "body" and order in #"insert id name here"
+to order each id in the way we wanted.
+ */
 body{
     padding: 30px;
     background-color: #aaaaaa;
+    display: flex;
+    flex-flow: column;
 }
+
+
+#main-title{
+  order:1;
+}
+
+#faculty{
+  order:2;
+}
+
+#courses{
+  order:3;
+}
+
+#pslo{
+  order: 4;
+}
+
+#validation{
+  order:5;
+}
+
