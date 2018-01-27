@@ -16,7 +16,7 @@ body{
   font-family: monospace;
   text-align: center;
   font-size: 4rem;
-  background-color: #7A0019; /* Made background color maroon*/
+  background-color: #7A0019; /* Made background color maroon, pointing out a change to an id*/
 
 }
 
@@ -25,6 +25,11 @@ h2 {
   text-align: center
 }
 
+/* Rule Change 4/5
+Our .section rule makes all of the sections have a smaller dotted
+black border around them and have a bigger space in between the bottom
+of each.
+ */
 .section {
   border-radius: 25px;
   padding: 20px;
@@ -34,8 +39,10 @@ h2 {
   max-width: 870px;
 }
 
-/*
-Used grouping to make the font-family of each section the same.
+/* Rule Change 3/5
+This rule uses grouping of pslo, courses, faculty, and validation ids
+to make the font-family of each section the same, adding unity and neatness
+to the page's look.
  */
 #pslo, #courses, #faculty, #validation{
   font-family: Arial;
@@ -68,19 +75,24 @@ img.pic {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #FFDE7A; /* changed color*/
+  background-color: #7A0019; /* changed color*/
 }
 
 #style li {
-  float: left; /*changed it to top*/
+  float: top; /*changed it to top*/
 }
 
+/* Rule Change 5/5
+This rule makes the style list look different from style1.css.
+It doesn't havea fixed position, its spacing is smaller, and
+its coloring style is more appropriate for the rest of the page.
+ */
 #style li a {
   display: block;
   color: black; /* Changed Style # text color from white to black */
-  font-size: 95%;
+  font-size: 75%;
   text-align: center;
-  padding: 12px 16px; /*this adds some spacing around the items in our style footer*/
+  padding: 10px 14px; /*this adds some spacing around the items in our style footer*/
   text-decoration: none;
 }
 
@@ -90,12 +102,11 @@ img.pic {
 }
 
 #style {
-  position: fixed;
-  background-color: #7A0019;
+  background-color: #5f7a34;
   left: 0;
   right: 0;
   top: 0;
-  height: 55px;
+  height: 30px;
   padding-top: 10px;
 }
 
@@ -106,12 +117,20 @@ img.pic {
   text-align: center;
 }
 
-/*Specified li (list-style-type) of the validation (Nesting) */
+/* Rule Change 2/5
+This rule uses a nest: Specified li (list-style-type) of the validation id.
+It made all of the bullet points for the validation section go away because
+otherwise they were formatted weirdly.*/
 #validation li{
   list-style-type: none; /*took away bullet points */
 }
 
-/*Directly edited a class within card-title */
+/* Rule Change 1/5
+This rule directly edits a class within card-title.
+This individually changes the Validation header to
+the same font-family, but smaller font-size as to
+not draw too much attention away from the main site,
+while still being readable.*/
 .card-title{
   font-size: 100%;
   font-family: "Arial Black";
