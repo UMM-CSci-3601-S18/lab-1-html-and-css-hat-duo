@@ -7,8 +7,10 @@ use float to make something locate itself on the right or left
 
 */
 
-/* Used display ad flex-flow in "body" and order in #"insert id name here"
-to order each id in the way we wanted.
+/* Rule Change 1/5
+This rule uses display flex and flex-flow: column to order
+main-title, faculty, courses, pslo, and validation from
+top to bottom, respectively.
  */
 body{
     padding: 30px;
@@ -18,20 +20,32 @@ body{
 
 }
 
+/* Used grouping to change margin*/
 #main-title, #faculty, #courses, #pslo{
   margin-bottom: 25px;
 }
 
+/* Rule Change 2/5
+Used grouping of faculty, courses, pslo, and validation to
+make all of their fonts the same to add a neat and consistet
+look to the page.
+ */
 #faculty, #courses, #pslo, #validation{
   font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 }
-
+/* Rule(s) Change(s) 5/5
+This is technically more than one change, but is best described together.
+Each section is formatted to look and behave differently from the other
+two style sheets. We changed the color scheme to look similar to UMM's
+MYU home page, and spacing around each section. We also used order in
+each to specify where they appear on the page.
+ */
 #main-title{
   order:1;
   width: auto;
-  color: #FFDE7A; /**/
-  background-color: maroon; /**/
+  color: #FFDE7A;
+  background-color: maroon;
   text-align: center;
   font-size: 100px;
   border: 2px solid #000000;
@@ -39,8 +53,8 @@ body{
 
 #faculty{
   order:2;
-  background-color: #7A0019; /**/
-  color: #FFDE7A; /**/
+  background-color: #7A0019;
+  color: #FFDE7A;
   width: auto;
   padding-bottom: 25px;
 }
@@ -48,29 +62,34 @@ body{
 #courses{
   order:3;
   float: left;
-  background-color: #FFDE7A; /**/
-  color: #15697a; /**/
+  background-color: #FFDE7A;
+  color: #15697a;
 }
 
 #pslo{
   order: 4;
   float:right;
-  background-color: #7A0019; /**/
-  color: #FFDE7A; /**/
+  background-color: #7A0019;
+  color: #FFDE7A;
 }
 
+/*Specifically edited an id to make the validation section
+not stand out, but still look appealing
+ */
 #validation{
   order:5;
-  background-color: white; /**/
+  background-color: white;
   font-size: 75%;
 }
-
-
 
 #faculty li{
   list-style-type: none;
 }
 
+/* Rule Change 3/5
+This rule makes the faculty images be in a specifically
+spaced row as long as the page is 1500px or more.
+ */
 @media (min-width: 1500px){
   #Elena{
     float:left;
@@ -92,6 +111,12 @@ body{
   }
 }
 
+/*Rule Change 4/5
+This rule allows for the faculty images to not have bad
+formatting when rescaling of the page occurs for whatever
+reason. It puts all images in a column at a certain width.
+
+ */
 @media (max-width: 1499px){
   .pic {
     display: block;
@@ -111,15 +136,18 @@ body{
   text-align: center;
 }
 
+/*Specifially edited the section class to add borders around each*/
 .section{
   border: 2px solid #000000;
 }
 
+/*Used nesting to edit the headerfor the validation section*/
 #validation h6{
   font-size: 90%;
   padding-bottom: 0cm;
 }
 
+/*We used nesting here to get rid of bullet list for style 1, 2, and 3. */
 #style li{
   text-align: right;
   list-style-type: none;
