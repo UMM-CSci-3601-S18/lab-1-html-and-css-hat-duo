@@ -34,6 +34,7 @@ body{
   background-color: maroon; /**/
   text-align: center;
   font-size: 100px;
+  border: 2px solid #000000;
 }
 
 #faculty{
@@ -64,28 +65,46 @@ body{
   font-size: 75%;
 }
 
-#Elena{
-  float:left;
-  margin-left: 60px;
-}
-#KK{
-  float:left;
-  margin-left: 200px;
-}
 
-#Nic{
-  float:right;
-  margin-right: 100px;
-}
-
-#Peter{
-  float:right;
-  margin-right: 200px;
-}
 
 #faculty li{
   list-style-type: none;
 }
+
+@media (min-width: 1500px){
+  #Elena{
+    float:left;
+    margin-left: 60px;
+  }
+  #KK{
+    float:left;
+    margin-left: 200px;
+  }
+
+  #Nic{
+    float:right;
+    margin-right: 100px;
+  }
+
+  #Peter{
+    float:right;
+    margin-right: 200px;
+  }
+}
+
+@media (max-width: 1499px){
+  .pic {
+    display: block;
+    margin: 0 auto;
+  }
+  .name, .office{
+    text-align: center;
+  }
+  #faculty h2{
+    text-align: center;
+  }
+}
+
 
 .section h2{
   padding: 10px;
@@ -101,5 +120,8 @@ body{
   padding-bottom: 0cm;
 }
 
-
+#style li{
+  text-align: right;
+  list-style-type: none;
+}
 
